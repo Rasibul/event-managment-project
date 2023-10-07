@@ -26,7 +26,7 @@ const NavBar = () => {
                             <Menus />
                         </ul>
                     </div>
-                    <h2 className="text-2xl font-bold">Happy<span className="text-3xl text-purple-800 font-bold italic">
+                    <h2 className="md:text-2xl font-bold">Happy<span className="text-3xl text-purple-800 font-bold italic">
                         Event
                     </span>
                     </h2>
