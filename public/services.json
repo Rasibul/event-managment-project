@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Wedding",
+        "title" :"Celebrate your special day with a grand wedding ceremony.",
+        "img": "https://i.ibb.co/ScvpPrd/pexels-edward-eyer-679568.jpg",
+        "price": 5000,
+        "short_description": "An elegant celebration of love and union on your special day. Create lasting memories with a beautiful wedding ceremony and reception that reflects your unique love story."
+    },
+    {
+        "id": 2,
+        "name": "Birthday Party",
+        "title" :"Host a fun-filled birthday party for your loved one and this party.",
+        "img": "https://i.ibb.co/Mh9bk91/birthday-party.jpg",
+        "price": 800,
+        "short_description": "A fun-filled bash to make your birthday memorable with friends and family. Enjoy delicious food, exciting activities, and create unforgettable moments."
+    },
+    {
+        "id": 3,
+        "name": "Anniversary",
+        "title" :"Celebrate years of love with an unforgettable anniversary event.",
+        "img": "https://i.ibb.co/qkLRJ9j/annivercary.jpg",
+        "price": 1200,
+        "short_description": "A romantic dinner to celebrate your years of togetherness. Share a special evening with your partner, complete with exquisite cuisine and heartfelt moments."
+    },
+    {
+        "id": 4,
+        "name": "Engagement Party",
+        "title" :"Announce your engagement in style with a unforgettable party.",
+        "img": "https://i.ibb.co/hXsZnmc/engment.jpg",
+        "price": 600,
+        "short_description": "A joyous event to mark the beginning of your journey together. Gather your loved ones to celebrate your engagement with laughter, love, and a promise of forever."
+    },
+    {
+        "id": 5,
+        "name": "Retirement Party",
+        "title" :"Bid farewell to a colleague with a memorable retirement party.",
+        "img": "https://i.ibb.co/rHbFvLH/img.jpg",
+        "price": 900,
+        "short_description": "A farewell party to celebrate your retirement and new adventures. Bid farewell to your career with friends and colleagues, and look forward to the exciting times ahead."
+    },
+    {
+        "id": 6,
+        "name": "Baby Shower",
+        "title" :"Celebrate the upcoming arrival of a new family member with a baby shower.",
+        "img": "https://i.ibb.co/vq8Px3N/t.jpg",
+        "price": 300,
+        "short_description": "A joyful event to welcome and shower blessings on the arrival of your baby. Surround yourself with love and support as you prepare for this new chapter in life."
+    }
+]
