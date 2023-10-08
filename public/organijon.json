@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Crane Bury",
+        "img": "https://i.ibb.co/LQynGMd/team-06.jpg",
+        "title": "Managing Director"
+    },
+    {
+        "id": 2,
+        "name": "Ellen Arch",
+        "img": "https://i.ibb.co/ccMxtH7/team-03.jpg",
+        "title": "Event Manager"
+    },
+    {
+        "id": 3,
+        "name": "Angel White",
+        "img": "https://i.ibb.co/Jn1d3tP/team-05.jpg",
+        "title": "Event Designer"
+    },
+    {
+        "id": 4,
+        "name": "Stane Cape",
+        "img": "https://i.ibb.co/Q9tgzHk/team-04.jpg",
+        "title": "Site Devloper"
+    }
+]

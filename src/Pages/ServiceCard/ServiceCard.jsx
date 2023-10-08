@@ -1,21 +1,19 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 
-
-const ServiceCard = ({service}) => {
-    const [servicesCard, setServiceCard] = useState();
-    const  id  = useParams();
+const ServiceCard = () => {
+    const [card, setCard] = useState()
+    const { id } = useParams()
     console.log(id)
-    const cards = useLoaderData();
-
+    const cards = useLoaderData()
+    console.log(cards)
     useEffect(() => {
-        const findSingelCard = cards?.find(servicesCard => servicesCard.id === id)
-        setServiceCard(findSingelCard)
+        const findCard = cards?.find(card => card.id === id)
+        setCard(findCard)
     }, [id, cards])
-
-    const {  name, img, price, title } = service || {}
+    const { name, img,  short_description } = card || {}
     return (
-        <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+        <div className="relative flex  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md max-w-[1330px] mx-auto ">
             <div className="relative mx-4 mt-4 h-96 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
                 <img
                     src={img}
@@ -28,15 +26,12 @@ const ServiceCard = ({service}) => {
                         Event Name : {name}
                     </p>
                 </div>
-                <p className="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased opacity-75">
-                    {title}
+                <p className="block font-sans text-sm font-normal py-2 leading-normal text-gray-700 antialiased opacity-75">
+                    {short_description}
                 </p>
-                <p className="block font-bold text-sm py-2 leading-normal  ">
-                    Event Cost:  {price}$
-                </p>
-            </div>
-            <div className="p-6 pt-0">
-
+                <button className="bg-purple-600 px-4 py-4 rounded hover:bg-fuchsia-600 text-white">
+                    Booking Now--
+                </button>
             </div>
         </div>
     );

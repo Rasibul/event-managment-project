@@ -1,50 +1,50 @@
 [
     {
-        "id": 1,
+        "id": "1",
         "name": "Wedding",
         "title" :"Celebrate your special day with a grand wedding ceremony.",
         "img": "https://i.ibb.co/ScvpPrd/pexels-edward-eyer-679568.jpg",
         "price": 5000,
-        "short_description": "An elegant celebration of love and union on your special day. Create lasting memories with a beautiful wedding ceremony and reception that reflects your unique love story."
+        "short_description": "A wedding is a culmination of dreams, a declaration of love, and a promise of forever. The wedding party, a monumental component of this cherished occasion, is a testament to the couple's love story and their journey to matrimonial bliss. As an esteemed event management company, we are dedicated to curating exquisite wedding parties that transcend expectations, creating memories that last a lifetime."
     },
     {
-        "id": 2,
+        "id":"2",
         "name": "Birthday Party",
         "title" :"Host a fun-filled birthday party for your loved one and this party.",
         "img": "https://i.ibb.co/Mh9bk91/birthday-party.jpg",
         "price": 800,
-        "short_description": "A fun-filled bash to make your birthday memorable with friends and family. Enjoy delicious food, exciting activities, and create unforgettable moments."
+        "short_description": "A birthday is a momentous occasion that marks another year of life's incredible journey. A birthday party is more than just a gathering; it's a joyous celebration of an individual's unique story and the people who have shared in their life. As a renowned event management company, we are dedicated to crafting extraordinary birthday parties that turn dreams into unforgettable memories."
     },
     {
-        "id": 3,
+        "id": "3",
         "name": "Anniversary",
         "title" :"Celebrate years of love with an unforgettable anniversary event.",
         "img": "https://i.ibb.co/qkLRJ9j/annivercary.jpg",
         "price": 1200,
-        "short_description": "A romantic dinner to celebrate your years of togetherness. Share a special evening with your partner, complete with exquisite cuisine and heartfelt moments."
+        "short_description": "An anniversary marks the enduring journey of love, commitment, and shared memories between a couple. An anniversary party is a testament to the strength of their bond and a celebration of the years spent together. As a trusted event management company, we take pride in crafting exquisite anniversary parties that honor the couple's unique love story."
     },
     {
-        "id": 4,
+        "id": "4",
         "name": "Engagement Party",
         "title" :"Announce your engagement in style with a unforgettable party.",
         "img": "https://i.ibb.co/hXsZnmc/engment.jpg",
         "price": 600,
-        "short_description": "A joyous event to mark the beginning of your journey together. Gather your loved ones to celebrate your engagement with laughter, love, and a promise of forever."
+        "short_description": "An engagement party is a joyous and heartfelt celebration that marks the beginning of a couple's journey toward marriage. It's a cherished moment for the engaged couple and an opportunity to bring together friends and family to share in their happiness. As an event management company, it's our privilege to help you create the perfect engagement party experience that reflects your unique style and love story."
     },
     {
-        "id": 5,
+        "id": "5",
         "name": "Retirement Party",
         "title" :"Bid farewell to a colleague with a memorable retirement party.",
         "img": "https://i.ibb.co/rHbFvLH/img.jpg",
         "price": 900,
-        "short_description": "A farewell party to celebrate your retirement and new adventures. Bid farewell to your career with friends and colleagues, and look forward to the exciting times ahead."
+        "short_description": "Retirement marks the end of one chapter and the beginning of another in a person's life journey. A retirement party is a heartfelt celebration of a career's accomplishments, a chance to honor the retiree's contributions, and a moment to embrace the exciting adventures that lie ahead. As a respected event management company, we specialize in orchestrating memorable retirement parties that pay tribute to a lifetime of hard work and dedication."
     },
     {
-        "id": 6,
+        "id": "6",
         "name": "Baby Shower",
         "title" :"Celebrate the upcoming arrival of a new family member with a baby shower.",
         "img": "https://i.ibb.co/vq8Px3N/t.jpg",
         "price": 300,
-        "short_description": "A joyful event to welcome and shower blessings on the arrival of your baby. Surround yourself with love and support as you prepare for this new chapter in life."
+        "short_description": "A baby shower is a heartwarming and joyous celebration that honors the upcoming arrival of a precious newborn. It's an occasion filled with love, laughter, and well-wishes for expectant parents as they embark on the beautiful journey of parenthood. As a trusted event management company, we specialize in crafting unforgettable baby shower parties that capture the essence of this special moment in a family's life."
     }
 ]
