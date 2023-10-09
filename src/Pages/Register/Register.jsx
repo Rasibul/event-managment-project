@@ -37,7 +37,7 @@ const Register = () => {
             handelProfile(name,img)
             .then(() => {
                 toast.success('User created successfully');
-                navigate('/login')
+                navigate('/home')
             })
         })
         .catch(error => console.log(error))
