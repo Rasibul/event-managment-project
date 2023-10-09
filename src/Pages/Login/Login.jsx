@@ -1,11 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link,  useLocation, useNavigate } from "react-router-dom";
 import SocialLogin from "../../SocialLogin/SocialLogin";
 import useAuth from "../../Hooks/useAuth";
 import toast from "react-hot-toast";
-import { useState } from "react";
+
 
 
 const Login = () => {
+    const location = useLocation ()
+    const navigate = useNavigate()
    
     const { signIn } = useAuth()
     const handelLogin = (e) => {
@@ -26,6 +28,7 @@ const Login = () => {
         signIn(email, password)
             .then(res => {
                 console.log(res.user)
+                navigate(location?.state ? location.state : '/home');
                 
             })
             .catch(error => console.log(error))

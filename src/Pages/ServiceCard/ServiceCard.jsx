@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import {  useLoaderData, useParams } from "react-router-dom";
 
 const ServiceCard = () => {
     const [card, setCard] = useState()
@@ -11,7 +11,7 @@ const ServiceCard = () => {
         const findCard = cards?.find(card => card.id === id)
         setCard(findCard)
     }, [id, cards])
-    const { name, img,  short_description } = card || {}
+    const { name, img, short_description } = card || {}
     return (
         <div className="relative flex  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md max-w-[1330px] mx-auto ">
             <div className="relative mx-4 mt-4 h-96 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
@@ -29,9 +29,10 @@ const ServiceCard = () => {
                 <p className="block font-sans text-sm font-normal py-2 leading-normal text-gray-700 antialiased opacity-75">
                     {short_description}
                 </p>
-                <button className="bg-purple-600 px-4 py-4 rounded hover:bg-fuchsia-600 text-white">
-                    Booking Now--
-                </button>
+                    <button className="bg-purple-600 px-4 py-4 rounded hover:bg-fuchsia-600 text-white">
+                        Booking Now--
+                    </button>
+                
             </div>
         </div>
     );
