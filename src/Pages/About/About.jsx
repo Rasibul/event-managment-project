@@ -8,7 +8,7 @@ const About = () => {
     return (
         <>
             <h2 className="text-6xl font-bold text-center mt-4 mb-4 text-purple-600">About Us</h2>
-            <div className="hero  max-w-[1330px] mx-auto ">
+            <div className="hero  ">
                 <div className="hero-content flex-col gap-10 lg:flex-row">
                     <img src="https://i.ibb.co/tJpkj8T/about-us.jpg" className="max-w-md rounded-lg shadow-2xl" />
                     <div>

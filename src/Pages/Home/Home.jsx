@@ -3,6 +3,9 @@ import Banner from "../../Header/Banner/Banner";
 import Service from "../../Componenet/Service/Service";
 import LikeUs from "../../Componenet/LikeUs/LikeUs";
 import EventPlanning from "../../Componenet/EvemntPlanning/EventPlanning";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 
 
@@ -10,6 +13,9 @@ import EventPlanning from "../../Componenet/EvemntPlanning/EventPlanning";
 
 
 const Home = () => {
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, [])
     const services = useLoaderData()
     // console.log(services)
     return (
@@ -21,9 +27,14 @@ const Home = () => {
                     services?.map(service => <Service key={service.id} service={service}></Service>)
                 }
             </div>
-            <LikeUs></LikeUs>
-            <EventPlanning></EventPlanning>
-           
+            <div data-aos='fade-right'>
+                <LikeUs></LikeUs>
+            </div>
+            <div data-aos='fade-down'>
+                <EventPlanning></EventPlanning>
+            </div>
+
+
         </div>
     );
 };

@@ -2,7 +2,7 @@
 
 const EventPlanning = () => {
     return (
-        <div className="hero min-h-screen max-w-[1330px] mx-auto ">
+        <div className="hero min-h-screen">
             <div className="hero-content flex-col gap-10 lg:flex-row">
                 <img src="https://i.ibb.co/KNCK0pL/planning.jpg" className="max-w-sm rounded-lg shadow-2xl" />
                 <div>

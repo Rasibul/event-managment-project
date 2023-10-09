@@ -2,7 +2,7 @@
 
 const LikeUs = () => {
     return (
-        <div className="hero  max-w-[1330px] mx-auto ">
+        <div className="hero">
         <div className="hero-content flex-col gap-10 lg:flex-row">
             <div>
                 <h1 className="text-xl font-bold text-purple-600">WHY CHOOSE US</h1>
