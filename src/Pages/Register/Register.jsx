@@ -2,11 +2,12 @@
 import toast from 'react-hot-toast';
 import useAuth from '../../Hooks/useAuth';
 import SocialLogin from '../../SocialLogin/SocialLogin';
-import { Link } from 'react-router-dom';
+import { Link,  useNavigate } from 'react-router-dom';
 
 
 const Register = () => {
-    const { createUser } = useAuth()
+    const { createUser,handelProfile } = useAuth()
+    const navigate = useNavigate()
 
     // get field values
     const handelSubmit = (e) => {
@@ -14,6 +15,7 @@ const Register = () => {
         const name = e.target.name.value
         const password = e.target.password.value
         const email = e.target.email.value
+        const img = e.target.img.value;
         console.log(name, email, password)
 
         // validation
@@ -21,10 +23,23 @@ const Register = () => {
             toast.error('password must be at least 6 character')
             return
         }
+        else if(!/[!@#$%^&*]/.test(password)){
+            toast.error('password must be at least one special character')
+        }
+        else if(!/[A-Z]/.test(password)) {
+            toast.error('password must be at least one captial character')
+        }
 
-        // creating a new user
+        
+       
         createUser(email,password)
-        .then(res => console.log(res.user))
+        .then(() => {
+            handelProfile(name,img)
+            .then(() => {
+                toast.success('User created successfully');
+                navigate('/login')
+            })
+        })
         .catch(error => console.log(error))
 
 
@@ -44,6 +59,10 @@ const Register = () => {
                                 <span className="label-text">Email</span>
                             </label>
                             <input type="email" placeholder="email" name="email" required className="input input-bordered" />
+                            <label className="label">
+                                <span className="label-text">Image Url</span>
+                            </label>
+                            <input type="text" placeholder="Image Url" name="img"  className="input input-bordered" />
                         </div>
                         <div className="form-control">
                             <label className="label">

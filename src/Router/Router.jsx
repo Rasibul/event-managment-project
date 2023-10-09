@@ -7,12 +7,14 @@ import Register from "../Pages/Register/Register";
 import ServiceCard from "../Pages/ServiceCard/ServiceCard";
 import PrivateRoute from "../Componenet/PrivateRoute/PrivateRoute";
 import Contact from "../Pages/Contact/Contact";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 
 const routes = createBrowserRouter([
     {
         path: '/',
         element: <MainLayOut></MainLayOut>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/home',

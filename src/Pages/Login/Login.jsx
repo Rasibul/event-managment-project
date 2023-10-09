@@ -19,9 +19,15 @@ const Login = () => {
 
 
         // validation
-        if (password.length < 6) {
+        if (password.length < 6){
             toast.error('password must be at least 6 character')
             return
+        }
+        else if(!/[!@#$%^&*]/.test(password)){
+            toast.error('password must be at least one special character')
+        }
+        else if(!/[A-Z]/.test(password)) {
+            toast.error('password must be at least one captial character')
         }
 
         // creating a new user

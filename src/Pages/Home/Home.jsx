@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Banner from "../../Header/Banner/Banner";
 import Service from "../../Componenet/Service/Service";
 import LikeUs from "../../Componenet/LikeUs/LikeUs";
+import EventPlanning from "../../Componenet/EvemntPlanning/EventPlanning";
 
 
 
@@ -21,6 +22,7 @@ const Home = () => {
                 }
             </div>
             <LikeUs></LikeUs>
+            <EventPlanning></EventPlanning>
            
         </div>
     );
