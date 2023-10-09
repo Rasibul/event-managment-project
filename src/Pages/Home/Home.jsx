@@ -1,6 +1,10 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../../Header/Banner/Banner";
 import Service from "../../Componenet/Service/Service";
+import LikeUs from "../../Componenet/LikeUs/LikeUs";
+
+
+
 
 
 
@@ -15,9 +19,9 @@ const Home = () => {
                 {
                     services?.map(service => <Service key={service.id} service={service}></Service>)
                 }
-                 
-
             </div>
+            <LikeUs></LikeUs>
+           
         </div>
     );
 };

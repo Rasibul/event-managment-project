@@ -1,12 +1,40 @@
+
+import toast from 'react-hot-toast';
+import useAuth from '../../Hooks/useAuth';
 import SocialLogin from '../../SocialLogin/SocialLogin';
 import { Link } from 'react-router-dom';
 
+
 const Register = () => {
+    const { createUser } = useAuth()
+
+    // get field values
+    const handelSubmit = (e) => {
+        e.preventDefault()
+        const name = e.target.name.value
+        const password = e.target.password.value
+        const email = e.target.email.value
+        console.log(name, email, password)
+
+        // validation
+        if (password.length < 6){
+            toast.error('password must be at least 6 character')
+            return
+        }
+
+        // creating a new user
+        createUser(email,password)
+        .then(res => console.log(res.user))
+        .catch(error => console.log(error))
+
+
+        
+    }
     return (
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                    <form className="card-body">
+                    <form onSubmit={handelSubmit} className="card-body">
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Name</span>
